@@ -1,0 +1,59 @@
+body{
+    background-color: darkgray;
+    color: black;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    gap: 10px;
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    float: none;
+    border-radius: 2cap;
+    margin-left: 10px;
+}
+input, select, button {
+    color: darkgray;
+    border-radius: 5px;
+}
+.campo input[type="text"], .campo input[type="email"], .campo input[type="password"], .campo select {
+    padding: 0.2em;
+    border: 1px solid darkgray;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+.campo select option {
+    padding-right: 1em;
+}
+.btncriar {
+    background: darkgray;
+    border: 0;
+    margin-bottom: 1em;
+    color: black;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 73%;
+    left: 58%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.btncriar:hover {
+    background: white;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.btncriar, select{
+    cursor: pointer;
+}
